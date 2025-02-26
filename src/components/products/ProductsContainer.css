@@ -1,0 +1,177 @@
+/* Container for all products */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100% !important;
+    margin: auto;
+  }
+  
+  /* Individual Product Card */
+  .product-card {
+    width: 300px;
+    display: flex;
+    background: #d5e6e3 !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:15px;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+   
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  /* Product Name */
+  .product-name {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    margin: 10px 0 !important;
+    color: black; 
+    text-align: start !important;
+  }
+  /* Product Price */
+.product-price {
+  text-align: start !important;
+  font-size: 1.3rem !important;
+  margin: 5px 0;
+  color: black !important; /* Green color for price */
+  font-weight: bold !important;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold !important;
+  padding:  0 10px !important;
+  margin: 5px 0;
+ border-radius: 5px;
+  background-color: #fff;
+  width: 35% !important;
+}
+
+.quantity-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+  /* Product Actions */
+  .card-actions {
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Button Styles */
+  .cart-button, .info-button {
+    display: flex !important;
+    width: 100% !important;
+    background: aliceblue !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    padding: 6px 22px !important;
+    color: black !important;
+    font-weight: bold !important;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .add-to-cart {
+    background: #16ac5f !important;
+    color: white;
+  }
+  
+  .add-to-cart:hover {
+    background: #118b4b;
+  }
+  
+  .info-button {
+    background: #FFD700;
+    color: #333;
+  }
+  
+  .info-button:hover {
+    background: #e6c200;
+  }
+  
+  /* Modal Styling */
+  .product-modal {
+    padding: 20px;
+  }
+  
+  .modal-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .modal-content {
+    margin-top: 10px;
+  }
+/* Product Dialog */
+.product-dialog .MuiDialogTitle-root {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Dialog Content */
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+/* Dialog Image */
+.dialog-image {
+  width: 100%;
+  max-width: 250px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Dialog Description */
+.dialog-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Dialog Actions */
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .products-container {
+      
+      flex-direction: column;
+      align-items: center;
+     
+    }
+  
+    .product-card {
+      width: 90%;
+    }
+  }

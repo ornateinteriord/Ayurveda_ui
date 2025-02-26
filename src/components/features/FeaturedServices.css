@@ -1,0 +1,111 @@
+.featured-services {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f7f7f7;
+  width: 100%;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  color: #734a13;
+  font-weight: bold;
+  font-size: 2rem; /* Added for better typography */
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px; /* Added to limit container width */
+  margin: 0 auto; /* Center the container */
+}
+
+.service-item {
+  background: linear-gradient(135deg, #d18440, #734a13);
+  color: white;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.service-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.icon-wrapper {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.service-description {
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .services-container {
+    gap: 20px; /* Reduce gap for smaller screens */
+  }
+
+  .service-item {
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+  }
+
+  .icon-wrapper {
+    font-size: 35px; /* Slightly smaller icons */
+  }
+
+  .service-title {
+    font-size: 1rem;
+  }
+
+  .service-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-container {
+    gap: 15px; /* Further reduce gap for mobile */
+    display: grid !important;
+    grid-template-columns: repeat(1fr);
+    padding: 0 !important;
+
+  }
+
+  .service-item {
+    width: 200px;
+    height: 200px;
+    padding: 10px !important;
+  }
+.icon-wrapper{
+  font-size: 1rem !important;
+}
+
+  .service-title {
+    font-size: 0.9rem !important;
+  }
+
+  .service-description {
+    font-size: 0.75rem !important;
+  }
+}

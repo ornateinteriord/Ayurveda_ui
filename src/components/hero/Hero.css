@@ -1,0 +1,317 @@
+/* Hero Section */
+.hero-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 60px 120px !important;
+    background: #734a13 !important; /* Warm Ayurvedic color */
+    min-height: 90vh !important;
+    width: 100% !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Hero Content (Text) */
+.hero-content {
+    max-width: 50% !important;
+    color: #cba081 !important;
+    z-index: 2 !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.subtitle {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: aliceblue !important;
+}
+
+.title {
+    font-size: 4rem !important;
+    font-weight: bold !important;
+    color: rgb(230, 216, 17) !important;
+}
+
+.subheading {
+    font-size: 2rem !important;
+    margin-bottom: 15px !important;
+    color: aliceblue !important;
+}
+
+.description {
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+    color: aliceblue !important;
+}
+
+.discover-btn {
+    background-color: #d43708 !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important;
+    font-size: 1rem !important;
+    border-radius: 10px !important;
+    text-transform: capitalize !important;
+    transition: transform 0.3s ease-in-out !important;
+}
+
+.discover-btn:hover {
+    box-shadow: #080808;
+}
+
+/* Hero Image Container */
+.hero-image-container {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle, rgba(184, 47, 6, 0.2) 10%, rgba(220, 78, 7, 0.2) 70%);
+    border-radius: 50%;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out; 
+    cursor: pointer;
+}
+
+
+.hero-image-container:hover {
+    transform: rotate(100deg); 
+}
+
+/* Rotating Dashed Border */
+.hero-image-container::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 3px dashed rgba(255, 255, 255, 0.5);
+    animation: rotateCircle 8s linear infinite;
+    transform-origin: center;
+}
+
+/* Fix animation */
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Image Styling */
+.hero-image {
+    width: 180px !important;
+    height: 180px !important;
+    border-radius: 20% !important;
+    border: 5px solid #3b3028 !important;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3) !important;
+    position: absolute !important;
+    transition: transform 0.5s ease-out !important;
+    object-fit: cover !important;
+}
+
+/* Slightly rotated images */
+.hero-img1 {
+    top: 15%;
+    left: 12%;
+    transform: rotate(-12deg) !important;
+}
+
+.hero-img2 {
+    top: 55%;
+    left: 13%;
+    transform: rotate(10deg) !important;
+}
+
+.hero-img3 {
+    top: 50%;
+    right: 12%;
+    transform: rotate(-8deg) !important;
+}
+
+.hero-img4 {
+    top: 14%;
+    right: 16%;
+    transform: rotate(-8deg) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .hero-container {
+        padding: 60px 80px !important;
+    }
+
+    .hero-content {
+        max-width: 45% !important;
+    }
+
+    .title {
+        font-size: 3.5rem !important;
+    }
+
+    .subheading {
+        font-size: 1.8rem !important;
+    }
+
+    .description {
+        font-size: 1.2rem !important;
+    }
+
+    .hero-image-container {
+        width: 450px;
+        height: 450px;
+    }
+
+    .hero-image-container::before {
+        width: 500px;
+        height: 500px;
+    }
+
+    .hero-image {
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .hero-container {
+        padding: 60px 40px !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+   
+    .hero-content {
+        max-width: 100% !important;
+        margin-bottom: 40px !important;
+    }
+    .discover-btn{
+    font-size: 2rem !important;
+    }
+    .subtitle{
+        font-size: 2.2rem !important; 
+        
+    }
+
+    .title {
+        font-size: 6rem !important;
+    }
+
+    .subheading {
+        font-size: 2rem !important;
+      
+    }
+
+    .description {
+        font-size: 1.5rem !important;
+    }
+
+    .hero-image-container {
+        width: 450px !important;
+        height: 450px !important;
+    }
+
+    .hero-image-container::before {
+        width: 600px !important;
+        height: 600px !important;
+    }
+
+    .hero-image {
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    .hero-img1 {
+        top: 10%;
+        left: 20%;
+        transform: rotate(-10deg) !important;
+    }
+
+    .hero-img2 {
+        top: 50%;
+        left: 15%;
+        transform: rotate(8deg) !important;
+    }
+
+    .hero-img3 {
+        top: 12%;
+        right: 15%;
+        transform: rotate(-6deg) !important;
+    }
+    .hero-img4{
+       
+            top: 45%;
+            right: 15%;
+            transform: rotate(-6deg) !important;
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-container {
+        padding: 15px 20px !important;
+        
+    }
+    .subtitle{
+        font-size: 1.2rem !important;
+    }
+
+    .title {
+        font-size: 3.3rem !important;
+    }
+
+    .subheading {
+        font-size: 1.3rem !important;
+    }
+
+    .description {
+        font-size: 1rem !important;
+    }
+
+    .hero-image-container {
+        width: 280px !important;
+        height: 280px !important;
+        margin-top: 0 !important;
+    }
+
+    .hero-image-container::before {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .hero-image {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .hero-img1 {
+        top: 13%;
+        left: 16%;
+        transform: rotate(-10deg) !important;
+    }
+
+    .hero-img2 {
+        top: 55%;
+        left: 20%;
+        transform: rotate(8deg) !important;
+    }
+
+    .hero-img3 {
+        top: 15%;
+        right: 15%;
+        transform: rotate(-6deg) !important;
+    }
+    .hero-img4{
+       
+            top: 50%;
+            right: 10%;
+            transform: rotate(-6deg) !important;
+        
+    }
+    .discover-btn{
+        font-size: 1.4rem !important;
+        margin-bottom: 0 !important;
+        }
+}
