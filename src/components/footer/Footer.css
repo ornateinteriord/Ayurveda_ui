@@ -1,0 +1,199 @@
+.footer {
+  background-color: #050e45 !important;
+  color: white !important;
+  padding: 3.75rem 0 !important;
+}
+
+.newsletter-container {
+  text-align: center !important;
+  margin-bottom: 3.125rem !important;
+}
+
+.newsletter-title {
+  font-size: 1.375rem !important;
+  font-weight: bold !important;
+  margin-bottom: 1.25rem !important;
+  color: #98ec7a !important;
+}
+
+.email-input-container {
+  display: flex !important;
+  justify-self: center !important;
+  justify-content: center !important;
+  gap: 1.25rem !important;
+  margin-top: 0.625rem !important;
+  padding: 2.5rem 3.75rem !important;
+  width: 70% !important;
+  background: #686d8d !important;
+  border-radius: 0.3125rem !important;
+}
+
+.email-input {
+  background: white !important;
+  border-radius: 0.3125rem !important;
+  /* padding: 0.75rem !important; */
+  width: 21.875rem !important;
+  border: none !important;
+}
+
+.subscribe-btn {
+  background-color: #98ec7a !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.footer-branding {
+  text-align: left !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.footer-title {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  margin-bottom: 1.25rem !important;
+  color: #98ec7a !important;
+  justify-self: center;
+}
+
+.footer-description {
+  font-size: 1rem !important;
+  margin-top: 1.25rem !important;
+  line-height: 1.8 !important;
+  text-align: center !important;
+}
+
+.footer-heading {
+  font-size: 1.25rem !important;
+  font-weight: bold !important;
+  margin-bottom: 1.25rem !important;
+  color: #98ec7a !important;
+}
+
+.footer-links {
+  list-style: none !important;
+  padding: 0 !important;
+  margin-top: 0.625rem !important;
+}
+
+.footer-links li {
+  font-size: 1rem !important;
+  margin-bottom: 0.9375rem !important;
+  cursor: pointer !important;
+  transition: color 0.3s !important;
+}
+
+.footer-links li:hover {
+  color: brown !important;
+}
+
+.social-icons {
+  display: flex !important;
+  gap: 1.5625rem !important;
+  margin-top: 1.25rem !important;
+  justify-content: center !important;
+}
+
+.social-icon {
+  font-size: 2rem !important;
+  cursor: pointer !important;
+  transition: transform 0.3s !important;
+}
+
+.social-icon:hover {
+  transform: scale(1.3) !important;
+  color: brown !important;
+}
+
+.divider {
+  margin: 2.5rem 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.footer-bottom {
+  margin-top: 3.125rem !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  font-size: 1rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding-top: 1.5625rem !important;
+}
+
+.footer-links-bottom {
+  display: flex !important;
+  gap: 1.5625rem !important;
+  margin-top: 0.625rem !important;
+}
+
+.footer-links-bottom p {
+  cursor: pointer !important;
+  transition: color 0.3s !important;
+}
+
+.footer-links-bottom p:hover {
+  color: #FFEB3B !important;
+}
+
+@media (max-width: 64rem) {
+  .email-input-container {
+      width: 90% !important;
+      padding: 1.875rem !important;
+  }
+
+  .footer-bottom {
+      flex-direction: row !important;
+      /* align-items: center !important; */
+      /* text-align: center !important; */
+  }
+
+}
+
+@media (max-width: 48rem) {
+  .email-input-container {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 0.625rem !important;
+      width: 100% !important;
+      padding: 1.25rem !important;
+  }
+
+  .email-input {
+      width: 100% !important;
+  }
+
+  .footer-links-bottom {
+      flex-direction: column !important;
+      text-align: center !important;
+      gap: 0.9375rem !important;
+  }
+}
+
+@media (max-width: 30rem) {
+  .footer-title {
+      font-size: 1.6rem !important;
+  }
+.newsletter-title{
+  margin-top: 18px !important;
+  font-size: 1.2rem !important;
+}
+  .footer-heading {
+      font-size: 1.125rem !important;
+  }
+
+  .footer-links li {
+      font-size: 0.875rem !important;
+  }
+  .footer-bottom {
+    flex-direction: column !important;
+ 
+}
+.social-icons{
+  justify-self: flex-start !important;
+}
+.footer-links-bottom {
+  flex-direction: row !important;
+  text-align: center !important;
+  gap: 0.9375rem !important;
+}
+}

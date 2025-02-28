@@ -67,18 +67,22 @@ const Navbar = () => {
           <Button color="inherit" component={Link} to="/healthcare">Health Care</Button>
           <Button color="inherit" component={Link} to="/contact">Contact</Button>
         </Box>
-           <Box display={'flex'} alignItems={'center'}justifyContent={'center'} gap={1} >
+           <Box className="cart-container" gap={3} >
         {/* Cart Icon */}
+        <Box display={'flex'} alignItems={'center'}justifyContent={'center'} gap={1} >
         <IconButton className="carticon" color="inherit" onClick={handleCartOpen}>
           <ShoppingCartIcon style={{fontSize:'35px'}}/>
         </IconButton>
         {/* Login Button (Desktop) */}
         <Button className="login-button" component={Link} to="/login">Login</Button>
         </Box>
+      <Box>
         {/* Mobile Menu Icon */}
         <IconButton className="menu-icon" onClick={handleDrawerToggle} edge="end" sx={{ display: { xs: "block", md: "none" } }}>
-          <MenuIcon />
+          <MenuIcon  sx={{fontSize:'40px'}}/>
         </IconButton>
+        </Box>
+        </Box>
       </Toolbar>
 
       {/* Mobile Drawer */}

@@ -31,7 +31,7 @@ const CartDialog = ({ open, onClose }) => {
     <Dialog
       open={open}
       onClose={onClose}
-      maxWidth="md"
+      // maxWidth="md"
       fullWidth
       sx={{
         "& .MuiDialog-paper": {

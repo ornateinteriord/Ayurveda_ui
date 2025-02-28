@@ -7,9 +7,10 @@
 
 .section-title {
   margin-bottom: 30px;
-  color: #734a13;
-  font-weight: bold;
-  font-size: 2rem; /* Added for better typography */
+  color: #734a13 !important;
+  font-weight: bold !important;
+  font-size: 2rem !important; 
+  margin-bottom: 20px !important;
 }
 
 .services-container {
@@ -17,8 +18,8 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  max-width: 1200px; /* Added to limit container width */
-  margin: 0 auto; /* Center the container */
+  max-width: 1200px; 
+  margin: 0 auto;
 }
 
 .service-item {

@@ -5,6 +5,8 @@ import "./App.css"
 import Hero from './components/hero/Hero'
 import FeaturedServices from './components/features/FeaturedServices'
 import ProductsContainer from './components/products/ProductsContainer'
+import HappyCustomers from './components/happyCustomers/HappyCustomers'
+import Footer from './components/footer/Footer'
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
             <Hero />
             <FeaturedServices/>
             <ProductsContainer/>
+            <HappyCustomers/>
           </>
         } />
         {/* <Route path="/about" element={<About />} />
@@ -26,7 +29,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />  */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
 
   )

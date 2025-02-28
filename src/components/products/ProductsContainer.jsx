@@ -7,6 +7,7 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import "./ProductsContainer.css";
 import products from "../../assets/productsdata/ProductsData"
+import { ArrowRight } from 'lucide-react';
 
 
 const ProductsContainer = () => {
@@ -39,6 +40,12 @@ const ProductsContainer = () => {
 
   return (
     <Box className="products-container">
+      <Box>
+        <Typography className="product-tittle">
+          Products
+        </Typography>
+      </Box>
+      <Box className="products-container">
       {products.map((product) => (
         <Card key={product.id} className="product-card">
           <CardMedia sx={{ width: "100%", height: "240px", borderRadius: "10px" }} component="img" image={product.image} 
@@ -55,11 +62,11 @@ const ProductsContainer = () => {
             {/* Quantity Controls */}
             <Box className="quantity-controls">
               <IconButton color="error" onClick={() => handleDecrease(product.id)} disabled={quantities[product.id] === 0}>
-                <RemoveIcon />
+                <RemoveIcon sx={{fontSize:'15px'}}/>
               </IconButton>
               <Typography variant="body1" className="quantity-text">{quantities[product.id] || 0}</Typography>
               <IconButton color="success" onClick={() => handleIncrease(product.id)}>
-                <AddIcon />
+                <AddIcon sx={{fontSize:'15px'}}/>
               </IconButton>
             </Box>
             </Box>
@@ -73,7 +80,9 @@ const ProductsContainer = () => {
             </Box>
           </CardContent>
         </Card>
+        
       ))}
+    
 
       {/* Product Details Dialog */}
       <Dialog open={Boolean(selectedProduct)} onClose={handleClose} className="product-dialog">
@@ -86,14 +95,21 @@ const ProductsContainer = () => {
           <Typography className="dialog-description">{selectedProduct?.description}</Typography>
         </DialogContent>
         <DialogActions className="dialog-actions">
-          <Button onClick={handleClose} variant="outlined" color="secondary">
+          <Button onClick={handleClose} variant="outlined" sx={{}}>
             Close
           </Button>
-          <Button variant="contained" color="primary">
+          <Button variant="contained" sx={{background:'#16ac5f'}}>
             Buy Now
           </Button>
         </DialogActions>
       </Dialog>
+      </Box>
+      <Box>
+  <Button variant="contained" className="view-more-btn" endIcon={<ArrowRight />}>
+    View more
+  </Button>
+</Box>
+
     </Box>
   );
 };

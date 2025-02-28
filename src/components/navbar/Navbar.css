@@ -3,6 +3,7 @@
   background-color: #16ac5f !important; 
   padding: 5px 20px;
   height: 80px !important;
+  width: 100% !important;
 }
 
 /* Toolbar styling */
@@ -67,22 +68,24 @@
 
 /* Login button styles */
 .login-button {
-  background-color: #072474 !important;
-  color: white !important;
-  padding: 10px 22px !important;
+  background-color: #ffff !important;
+  color: black !important;
+  padding: 9px 22px !important;
   border-radius: 5px !important;
   font-weight: bold !important;
   transition: background 0.3s ease-in-out;
 }
 
 .login-button:hover {
-  background-color: #1A6622;
+  background-color: rgb(5, 5, 82) !important;
+  color: #fff !important;
 }
 
 /* Menu icon for mobile */
 .menu-icon {
   display: none !important;
   color: white !important;
+  
 }
 
 /* Mobile drawer menu */
@@ -128,13 +131,28 @@
   }
   .menu-icon {
       display: block !important;
+      
   }
-
+  .navbar{
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .toolbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
   .login-button {
       display: none !important;
   }
   .carticon{
     margin-left: 100% !important;
+  }
+  .cart-container{
+    display: flex !important;
+
   }
 }
 

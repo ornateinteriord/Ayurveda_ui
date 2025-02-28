@@ -28,7 +28,7 @@ const  products = [
        price: "₹599"
      },
     { id: 7, name: "Ashwagandha", image: ashwa, description: "Natural Ashwagandha for stress relief dolor sit amet consectetur adipisicing elit. Rerum tempore, quos est dolor dignissimos similique voluptas quod .",
-       price: "₹1099"
+       price: "₹999"
      },
     { id: 8, name: "Triphala Powder", image: triphala, description: "Digestive health supplement with Triphala dolor sit amet consectetur adipisicing elit. Rerum tempore, quos est dolor dignissimos similique voluptas quod .",
        price: "₹899"
