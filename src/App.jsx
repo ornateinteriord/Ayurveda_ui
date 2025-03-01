@@ -6,7 +6,8 @@ import Hero from './components/hero/Hero'
 import FeaturedServices from './components/features/FeaturedServices'
 import ProductsContainer from './components/products/ProductsContainer'
 import HappyCustomers from './components/happyCustomers/HappyCustomers'
-import Footer from './components/footer/Footer'
+import Footer from './components/footer/Footer';
+import AboutUs from './components/aboutUs/AboutUs'
 
 const App = () => {
   return (
@@ -23,8 +24,8 @@ const App = () => {
             <HappyCustomers/>
           </>
         } />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
+         <Route path="/about" element={<AboutUs />} />
+        {/*<Route path="/products" element={<Products />} />
         <Route path="/healthcare" element={<HealthCare />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />  */}
