@@ -8,6 +8,8 @@ import ProductsContainer from './components/products/ProductsContainer'
 import HappyCustomers from './components/happyCustomers/HappyCustomers'
 import Footer from './components/footer/Footer';
 import AboutUs from './components/aboutUs/AboutUs'
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy'
+import ContactUs from './components/contactUs/ContactUs'
 
 const App = () => {
   return (
@@ -25,9 +27,11 @@ const App = () => {
           </>
         } />
          <Route path="/about" element={<AboutUs />} />
+         <Route path="/privacy" element={<PrivacyPolicy />} />
+         <Route path="/contact" element={<ContactUs />} />
         {/*<Route path="/products" element={<Products />} />
-        <Route path="/healthcare" element={<HealthCare />} />
-        <Route path="/contact" element={<Contact />} />
+        
+        
         <Route path="/login" element={<Login />} />  */}
       </Routes>
       <Footer />

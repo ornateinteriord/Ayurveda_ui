@@ -1,0 +1,73 @@
+/* General Styles */
+/* .contact-us-container {
+     padding: 40px 20px; 
+  }  */
+  
+  .header {
+    margin-top:80px !important;
+    font-weight: bold !important;
+    color: #4CAF50; /* Green theme */
+    text-align: center;
+    font-size: 40px !important;
+  }
+  
+  .contact-form-card,
+  .contact-details-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 25px !important;
+  }
+  
+  .contact-form-card:hover,
+  .contact-details-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-input {
+    margin-bottom: 16px;
+  }
+  
+  .submit-button {
+    margin-top: 16px;
+    background-color: #4CAF50; /* Green theme */
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .contact-icon {
+    vertical-align: middle;
+    margin-right: 8px;
+    color: #4CAF50; /* Green theme */
+  }
+  
+  .map-container {
+    margin-top: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  
+    .contact-form-card,
+    .contact-details-card {
+      margin-bottom: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      font-size: 1.5rem; /* Even smaller font size for very small devices */
+    }
+  
+    .contact-icon {
+      font-size: 1.2rem; /* Adjust icon size for small devices */
+    }
+  }

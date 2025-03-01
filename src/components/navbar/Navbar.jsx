@@ -62,9 +62,10 @@ const Navbar = () => {
           <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
             <MenuItem onClick={handleClose} component={Link} to="/products/herbs">Herbs</MenuItem>
             <MenuItem onClick={handleClose} component={Link} to="/products/oils">Oils</MenuItem>
+            <MenuItem onClick={handleClose} component={Link} to="/products/health">Health Care</MenuItem>
             <MenuItem onClick={handleClose} component={Link} to="/products/foods">Foods</MenuItem>
           </Menu>
-          <Button color="inherit" component={Link} to="/healthcare">Health Care</Button>
+          <Button color="inherit" component={Link} to="/privacy">Privacy & policy</Button>
           <Button color="inherit" component={Link} to="/contact">Contact</Button>
         </Box>
            <Box className="cart-container" gap={3} >
@@ -101,11 +102,11 @@ const Navbar = () => {
           <Collapse in={mobileDropdownOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button component={Link} to="/products/herbs" onClick={handleDrawerToggle}>Herbs<ListItemText /></ListItem>
-              <ListItem button component={Link} to="/products/oils" onClick={handleDrawerToggle}>Oils<ListItemText  /></ListItem>
+              <ListItem button component={Link} to="/products/oils" onClick={handleDrawerToggle}>Health Care<ListItemText  /></ListItem>
               <ListItem button component={Link} to="/products/foods" onClick={handleDrawerToggle}>Foods<ListItemText  /></ListItem>
             </List>
           </Collapse>
-          <ListItem button component={Link} to="/healthcare" onClick={handleDrawerToggle}>Health Care<ListItemText  /></ListItem>
+          <ListItem button component={Link} to="/privacy" onClick={handleDrawerToggle}>Privacy & policy<ListItemText  /></ListItem>
           <ListItem button component={Link} to="/contact" onClick={handleDrawerToggle}>Contact<ListItemText  /></ListItem>
           <ListItem button component={Link} to="/login" onClick={handleDrawerToggle}>Login<ListItemText /></ListItem>
         </List>
