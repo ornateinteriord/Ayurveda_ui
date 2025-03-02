@@ -108,7 +108,7 @@
 .mobile-menu .MuiListItem-root {
   padding: 12px 20px !important;
   font-size: 1.2rem !important;
-  width: 70% !important;
+  width: 80% !important;
   justify-self: center;
   color: aliceblue;
   font-weight: bold !important;
@@ -124,6 +124,49 @@
   margin-left: 20px;
   color: white;
 }
+.mobile-menu .MuiListItem-root {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Add delays for step-by-step animation */
+.mobile-menu .MuiListItem-root:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.mobile-menu .MuiListItem-root:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.mobile-menu .MuiListItem-root:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.mobile-menu .MuiListItem-root:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.mobile-menu .MuiListItem-root:nth-child(5) {
+  animation-delay: 1s;
+}
+.mobile-menu .MuiListItem-root:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.mobile-menu .MuiListItem-root:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.mobile-menu .MuiListItem-root:nth-child(8) {
+  animation-delay: 1.6s;
+}
+
 
 /* Responsive design */
 @media screen and (max-width: 900px) {

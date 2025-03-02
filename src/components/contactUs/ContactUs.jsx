@@ -29,9 +29,10 @@ const ContactUs = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container maxWidth="lg" className="contact-us-container">
+      {/* Remove maxWidth or set it to false to make it full-width */}
+      <Container maxWidth={false} className="contact-us-container">
         {/* Header Section */}
-        <Typography  align="center" gutterBottom className="header">
+        <Typography align="center" gutterBottom className="header">
           Contact Us
         </Typography>
         <Typography variant="h5" align="center" paragraph>
@@ -39,7 +40,7 @@ const ContactUs = () => {
         </Typography>
 
         {/* Contact Form and Details */}
-        <Grid container spacing={4}>
+        <Grid container spacing={4} className="contact-location-cont">
           {/* Contact Form */}
           <Grid item xs={12} md={6}>
             <Card className="contact-form-card">

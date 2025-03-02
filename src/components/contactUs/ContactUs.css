@@ -1,73 +1,236 @@
 /* General Styles */
-/* .contact-us-container {
-     padding: 40px 20px; 
-  }  */
-  
-  .header {
-    margin-top:80px !important;
-    font-weight: bold !important;
-    color: #4CAF50; /* Green theme */
-    text-align: center;
-    font-size: 40px !important;
+.contact-us-container {
+  padding: 40px 20px;
+  width: 100% !important;
+}
+
+.header {
+  margin-top: 80px !important;
+  font-weight: bold !important;
+  color: #4CAF50; /* Green theme */
+  text-align: center;
+  font-size: 40px !important;
+}
+
+
+.contact-form-card,
+.contact-details-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 10px !important;
+ width: 100% !important;
+
+}
+
+.contact-form-card:hover,
+.contact-details-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.form-input {
+  margin-bottom: 16px;
+}
+
+.submit-button {
+  margin-top: 16px;
+  background-color: #4CAF50; /* Green theme */
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.contact-icon {
+  vertical-align: middle;
+  margin-right: 8px;
+  color: #4CAF50; /* Green theme */
+}
+
+.map-container {
+  margin-top: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Privacy Policy Styles */
+.privacy-policy-container {
+  padding: 30px 0px !important;
+  width: 100% !important;
+}
+
+.privacy-intro {
+  margin-bottom: 30px;
+}
+
+.privacy-title {
+  font-size: 40px !important;
+  font-weight: bold !important;
+  color: #1b064a !important;
+  text-align: center;
+}
+
+.privacy-descr {
+  font-size: 20px !important;
+  text-align: justify;
+}
+
+.privacy-intro .privacy-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px !important;
+}
+
+.contact-info {
+  margin-top: 30px !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.left-container,
+.right-container {
+  padding: 10px;
+}
+
+.accordion {
+  background-color: #f9f9f9 !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion:hover {
+  transform: scale(1.02);
+}
+
+/* Accordion Summary */
+.accordion .MuiAccordionSummary-root {
+  background-color: #1b064a !important;
+  color: white !important;
+  border-radius: 8px !important;
+}
+
+/* Accordion Content */
+.accordion .MuiAccordionDetails-root {
+  background-color: white !important;
+  color: #333 !important;
+  border-radius: 0 0 8px 8px !important;
+  padding: 15px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .privacy-policy-container {
+    padding: 25px 20px;
   }
-  
+
+  .privacy-title {
+    font-size: 36px !important;
+  }
+
+  .privacy-descr {
+    font-size: 18px !important;
+  }
+
+  .header {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .privacy-policy-container {
+    padding: 20px 15px;
+  }
+
+  .privacy-title {
+    font-size: 32px !important;
+  }
+
+  .privacy-descr {
+    font-size: 16px !important;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .privacy-policy-container {
+    padding: 20px 10px;
+  }
+
+  .privacy-title {
+    font-size: 28px !important;
+  }
+
+  .privacy-descr {
+    font-size: 14px !important;
+  }
+
+  .header {
+    font-size: 1.8rem;
+  }
+
   .contact-form-card,
   .contact-details-card {
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: box-shadow 0.3s ease-in-out;
-    margin-bottom: 25px !important;
+    margin-bottom: 24px;
   }
-  
-  .contact-form-card:hover,
-  .contact-details-card:hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .privacy-policy-container {
+    padding: 15px;
   }
-  
-  .form-input {
-    margin-bottom: 16px;
+
+  .privacy-title {
+    font-size: 24px !important;
   }
-  
-  .submit-button {
-    margin-top: 16px;
-    background-color: #4CAF50; /* Green theme */
-    color: white;
+
+  .privacy-descr {
+    font-size: 12px !important;
   }
-  
-  .submit-button:hover {
-    background-color: #45a049; /* Darker green on hover */
+
+  .header {
+    font-size: 1.5rem;
   }
-  
+
   .contact-icon {
-    vertical-align: middle;
-    margin-right: 8px;
-    color: #4CAF50; /* Green theme */
+    font-size: 1.2rem;
   }
-  
-  .map-container {
-    margin-top: 24px;
-    border-radius: 8px;
-    overflow: hidden;
+}
+
+@media (max-width: 400px) {
+  .privacy-policy-container {
+    padding: 10px 5px !important;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .header {
-      font-size: 2rem; /* Smaller font size for mobile */
-    }
-  
-    .contact-form-card,
-    .contact-details-card {
-      margin-bottom: 24px;
-    }
+
+  .privacy-title {
+    font-size: 22px !important;
   }
-  
-  @media (max-width: 480px) {
-    .header {
-      font-size: 1.5rem; /* Even smaller font size for very small devices */
-    }
-  
-    .contact-icon {
-      font-size: 1.2rem; /* Adjust icon size for small devices */
-    }
+
+  .privacy-descr {
+    font-size: 12px !important;
   }
+
+  .header {
+    font-size: 1.2rem !important;
+  }
+
+  .contact-info {
+    font-size: 0.8rem !important;
+  }
+
+  .left-container,
+  .right-container {
+    padding: 5px;
+  }
+
+  .accordion {
+    margin-bottom: 8px;
+  }
+}

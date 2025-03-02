@@ -28,6 +28,7 @@ const Navbar = () => {
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
+    setMobileDropdownOpen(false);
   };
 
   const handleMobileDropdownToggle = () => {

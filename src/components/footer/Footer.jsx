@@ -12,7 +12,7 @@ const Footer = () => {
           <Grid item xs={12} md={3} className="footer-branding">
             <Typography variant="h4" className="footer-title">Ayurvedic</Typography>
             <Typography variant="body1" className="footer-description">
-              Experience the power of Ayurveda for a healthier and natural lifestyle.
+              Experience the power of Ayurveda for a healthier natural lifestyle.
               Our products are crafted to balance your mind, body, and soul.
             </Typography>
           </Grid>
