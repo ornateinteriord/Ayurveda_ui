@@ -36,13 +36,13 @@ const ContactUs = () => {
           Contact Us
         </Typography>
         <Typography variant="h5" align="center" paragraph className="contact-desc">
-          We’d love to hear from you! Reach out to us for any questions, feedback, or inquiries.
+          We’d love to hear from you! Reach out to us and for any questions, feedback, or inquiries.
         </Typography>
 
         {/* Contact Form and Details */}
-        <Grid container spacing={4} className="contact-location-cont">
+        <Grid container spacing={4} >
           {/* Contact Form */}
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} className="contact-location-cont">
             <Card className="contact-form-card">
               <CardContent>
                 <Typography variant="h5" gutterBottom>

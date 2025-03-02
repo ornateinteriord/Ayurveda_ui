@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
             At our company, we are committed to safeguarding your personal data. This policy explains how we collect, use, and protect your information.
             We ensure transparency in data handling and comply with all legal requirements to keep your information secure.
             At our company, we are committed to safeguarding your personal data.
-            We ensure transparency in data handling and comply with all legal requirements to keep your information secure.
+            requirements to keep your information secure.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>

@@ -107,21 +107,26 @@
 
 @media (max-width: 400px) {
   .contact-us-container{
-    padding: 10px !important;
+    padding: 0px !important;
   }
   .header {
     font-size: 24px; /* Smallest font for very small devices */
+   margin-top: 80px !important;
   }
   .contact-desc{
     font-size: 18px !important;
+    text-align: start !important;
+    margin: 0 !important;
   }
 
   .contact-us-container {
-    padding: 10px 5px; /* Minimal padding for very small screens */
+    padding: 0px 5px !important; /* Minimal padding for very small screens */
+
   }
 
   .form-input {
-    padding: 6px; /* Minimal padding for inputs */
+    padding: 0px !important; /* Minimal padding for inputs */
+   
   }
 
   .submit-button {
@@ -131,4 +136,5 @@
   .map-container {
     height: 200px; /* Minimal map height for very small screens */
   }
+ 
 }
