@@ -1,17 +1,21 @@
 /* General Styles */
 .contact-us-container {
-  padding: 40px 20px;
+  padding: 10px 40px !important;
   width: 100% !important;
 }
 
 .header {
-  margin-top: 80px !important;
+  margin-top: 70px !important;
   font-weight: bold !important;
-  color: #4CAF50; /* Green theme */
+  color: #4CAF50 !important; /* Green theme */
   text-align: center;
-  font-size: 40px !important;
+  font-size: 35px !important;
 }
-
+.contact-desc{
+  font-size: 20px !important;
+  color:#333 !important ;
+  margin-top: 0 !important;
+}
 
 .contact-form-card,
 .contact-details-card {
@@ -33,9 +37,11 @@
 }
 
 .submit-button {
-  margin-top: 16px;
+  margin-top: 16px !important;
   background-color: #4CAF50; /* Green theme */
-  color: white;
+   font-size: 18px !important;
+  color: white !important;
+  text-transform: capitalize !important;
 }
 
 .submit-button:hover {
@@ -54,183 +60,75 @@
   overflow: hidden;
 }
 
-/* Privacy Policy Styles */
-.privacy-policy-container {
-  padding: 30px 0px !important;
-  width: 100% !important;
-}
-
-.privacy-intro {
-  margin-bottom: 30px;
-}
-
-.privacy-title {
-  font-size: 40px !important;
-  font-weight: bold !important;
-  color: #1b064a !important;
-  text-align: center;
-}
-
-.privacy-descr {
-  font-size: 20px !important;
-  text-align: justify;
-}
-
-.privacy-intro .privacy-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px !important;
-}
-
-.contact-info {
-  margin-top: 30px !important;
-  font-weight: bold !important;
-  text-align: center;
-}
-
-.left-container,
-.right-container {
-  padding: 10px;
-}
-
-.accordion {
-  background-color: #f9f9f9 !important;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
-  border-radius: 8px !important;
-  margin-bottom: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-.accordion:hover {
-  transform: scale(1.02);
-}
-
-/* Accordion Summary */
-.accordion .MuiAccordionSummary-root {
-  background-color: #1b064a !important;
-  color: white !important;
-  border-radius: 8px !important;
-}
-
-/* Accordion Content */
-.accordion .MuiAccordionDetails-root {
-  background-color: white !important;
-  color: #333 !important;
-  border-radius: 0 0 8px 8px !important;
-  padding: 15px !important;
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .privacy-policy-container {
-    padding: 25px 20px;
-  }
-
-  .privacy-title {
-    font-size: 36px !important;
-  }
-
-  .privacy-descr {
-    font-size: 18px !important;
-  }
-
   .header {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .privacy-policy-container {
-    padding: 20px 15px;
-  }
-
-  .privacy-title {
-    font-size: 32px !important;
-  }
-
-  .privacy-descr {
-    font-size: 16px !important;
-  }
-
-  .header {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .privacy-policy-container {
-    padding: 20px 10px;
-  }
-
-  .privacy-title {
-    font-size: 28px !important;
-  }
-
-  .privacy-descr {
-    font-size: 14px !important;
-  }
-
-  .header {
-    font-size: 1.8rem;
+    font-size: 36px; /* Slightly smaller font for tablets */
   }
 
   .contact-form-card,
   .contact-details-card {
-    margin-bottom: 24px;
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 32px; /* Smaller font for smaller tablets */
+  }
+
+  .contact-us-container {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .form-input {
+    padding: 8px; /* Reduce padding for inputs */
+  }
+
+  .submit-button {
+    padding: 8px 16px; /* Reduce padding for button */
   }
 }
 
 @media (max-width: 600px) {
-  .privacy-policy-container {
-    padding: 15px;
-  }
-
-  .privacy-title {
-    font-size: 24px !important;
-  }
-
-  .privacy-descr {
-    font-size: 12px !important;
-  }
-
   .header {
-    font-size: 1.5rem;
+    font-size: 28px; /* Smaller font for mobile devices */
   }
 
-  .contact-icon {
-    font-size: 1.2rem;
+  .contact-form-card,
+  .contact-details-card {
+    padding: 10px; /* Further reduce padding for mobile */
+  }
+
+  .map-container {
+    height: 250px; /* Reduce map height for mobile */
   }
 }
 
 @media (max-width: 400px) {
-  .privacy-policy-container {
-    padding: 10px 5px !important;
+  .contact-us-container{
+    padding: 10px !important;
   }
-
-  .privacy-title {
-    font-size: 22px !important;
-  }
-
-  .privacy-descr {
-    font-size: 12px !important;
-  }
-
   .header {
-    font-size: 1.2rem !important;
+    font-size: 24px; /* Smallest font for very small devices */
+  }
+  .contact-desc{
+    font-size: 18px !important;
   }
 
-  .contact-info {
-    font-size: 0.8rem !important;
+  .contact-us-container {
+    padding: 10px 5px; /* Minimal padding for very small screens */
   }
 
-  .left-container,
-  .right-container {
-    padding: 5px;
+  .form-input {
+    padding: 6px; /* Minimal padding for inputs */
   }
 
-  .accordion {
-    margin-bottom: 8px;
+  .submit-button {
+    padding: 6px 12px; /* Minimal padding for button */
+  }
+
+  .map-container {
+    height: 200px; /* Minimal map height for very small screens */
   }
 }

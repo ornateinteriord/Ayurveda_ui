@@ -3,7 +3,7 @@ import { Typography, Accordion, AccordionSummary, AccordionDetails, Link, Contai
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './PrivacyPolicy.css';
 import privacyPolicySections from '../../assets/productsdata/privacy';
-import privacyImage from '../../assets/images/privacyImage1.avif'; // Add a relevant real image
+import privacyImage from '../../assets/images/privacyImage2.avif'; // Add a relevant real image
 
 const PrivacyPolicy = () => {
   const [expandedLeft, setExpandedLeft] = useState(null);
@@ -22,35 +22,37 @@ const PrivacyPolicy = () => {
   const rightSections = privacyPolicySections.slice(middleIndex);
 
   return (
-    <Container maxWidth={false} className="privacy-policy-container">
-      {/* Privacy Title */}
-      <Typography variant="h2" align="center" gutterBottom className="privacy-main-title">
-        Privacy and Policy
-      </Typography>
+    <Container  className="privacy-policy-container">
 
       {/* Privacy Description and Image */}
       <Grid container spacing={4} alignItems="center" className="privacy-intro">
-        {/* Privacy Image */}
-        <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
-          <Box display="flex" justifyContent="center">
-            <img src={privacyImage} alt="Privacy Policy" className="privacy-image" />
-          </Box>
-        </Grid>
-
         {/* Privacy Description */}
-        <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
+        <Grid item xs={12} md={6} className='policy-desc-conatiner'>
           <Typography variant="h5" gutterBottom className="privacy-title">
             Privacy Policy Overview
           </Typography>
           <Typography variant="body1" color="textSecondary" paragraph className="privacy-descr">
             At our company, we are committed to safeguarding your personal data. This policy explains how we collect, use, and protect your information.
             We ensure transparency in data handling and comply with all legal requirements to keep your information secure.
+            At our company, we are committed to safeguarding your personal data.
+            We ensure transparency in data handling and comply with all legal requirements to keep your information secure.
           </Typography>
         </Grid>
+        <Grid item xs={12} md={6}>
+          <Box display="flex" justifyContent="center">
+            <img src={privacyImage} alt="Privacy Policy" className="privacy-image" />
+          </Box>
+        </Grid>
       </Grid>
-
+     <Box>
+      <Typography variant="h2" align="center" gutterBottom className="privacy-main-title">
+        Privacy and Policy
+      </Typography>
+      </Box>
       {/* Accordion Sections */}
       <Grid container spacing={4} className='accordion-main-container'>
+           {/* Privacy Title */}
+    
         {/* Left Side Accordion */}
         <Grid item xs={12} md={6}>
           <Box className="left-container">
@@ -62,7 +64,7 @@ const PrivacyPolicy = () => {
                 className="accordion"
               >
                 <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}>
-                  <Typography variant="h6">{section.title}</Typography>
+                  <Typography variant="h6" className='section-title'>{section.title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography variant="body1" color="textSecondary">
@@ -85,10 +87,10 @@ const PrivacyPolicy = () => {
                 className="accordion"
               >
                 <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}>
-                  <Typography variant="h6">{section.title}</Typography>
+                  <Typography variant="h6" className='section-title'>{section.title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography variant="body1" color="textSecondary">
+                  <Typography variant="body1" color="textSecondary" className='section-content'>
                     {section.content}
                   </Typography>
                 </AccordionDetails>

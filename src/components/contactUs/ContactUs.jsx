@@ -35,7 +35,7 @@ const ContactUs = () => {
         <Typography align="center" gutterBottom className="header">
           Contact Us
         </Typography>
-        <Typography variant="h5" align="center" paragraph>
+        <Typography variant="h5" align="center" paragraph className="contact-desc">
           We’d love to hear from you! Reach out to us for any questions, feedback, or inquiries.
         </Typography>
 

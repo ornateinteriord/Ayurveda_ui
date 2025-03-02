@@ -1,73 +1,75 @@
 /* Privacy Policy Main Container */
 .privacy-policy-container {
-  padding: 30px !important;
+  padding: 60px !important;
   width: 100% !important;
-  margin-top: 70px !important;
+  margin-top: 90px !important;
 }
 
 .privacy-intro {
-  margin-bottom: 80px;
-  
+  margin-bottom: 80px !important;
 }
+
 .privacy-main-title {
   font-size: 40px !important;
   font-weight: bold !important;
   color: #1b064a !important;
-  text-align: center !important; /* Center align title */
+  text-align: center !important;
 }
 
-.accordion-main-container{
-  padding: 0px 20px !important;
+.accordion-main-container {
+  padding: 0 20px !important;
 }
+
 .privacy-title {
   font-size: 40px !important;
   font-weight: bold !important;
   color: #1b064a !important;
-  text-align: start !important; /* Center align title */
+  text-align: start !important;
 }
 
 .privacy-descr {
   font-size: 20px !important;
- width: 95% !important;
+  width: 95% !important;
+  color: #333 !important;
 }
 
 .privacy-intro .privacy-image {
-  width: 90%;
-  height: auto; /* Make image responsive */
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90% !important;
+  height: 60vh !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important;
   margin-bottom: 30px !important;
   padding: 30px !important;
 }
 
 .header {
   font-weight: bold !important;
-  color: #16ac5f;
+  color: #16ac5f !important;
   text-transform: none !important;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .contact-info {
   margin-top: 30px !important;
   font-weight: bold !important;
-  text-align: center; /* Center align contact info */
+  text-align: center !important;
 }
 
 .left-container,
 .right-container {
-  padding: 10px;
+  padding: 10px !important;
 }
 
 .accordion {
   background-color: #f9f9f9 !important;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
   border-radius: 8px !important;
-  margin-bottom: 10px;
-  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .accordion:hover {
-  transform: scale(1.02);
+  transform: scale(1.02) !important;
 }
 
 /* Accordion Summary */
@@ -75,6 +77,7 @@
   background-color: #1b064a !important;
   color: white !important;
   border-radius: 8px !important;
+ 
 }
 
 /* Accordion Content */
@@ -84,7 +87,6 @@
   border-radius: 0 0 8px 8px !important;
   padding: 15px !important;
 }
-
 
 /* Responsive Design */
 @media screen and (max-width: 900px) {
@@ -105,15 +107,15 @@
   }
 
   .privacy-intro .privacy-image {
-    height: auto;
+    height: auto !important;
   }
 
   .header {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
 
   .contact-info {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 }
 
@@ -132,7 +134,7 @@
   }
 
   .privacy-intro .privacy-image {
-    height: auto;
+    height: auto !important;
   }
 
   .header {
@@ -140,52 +142,61 @@
   }
 
   .contact-info {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
 
   .accordion {
-    margin-bottom: 8px;
+    margin-bottom: 8px !important;
   }
 }
 
 @media screen and (max-width: 400px) {
   .privacy-policy-container {
     margin-top: 80px !important;
-    padding: 10px  !important;
-  }
-  .header{
-    margin-bottom: 0 !important;
-  }
-  .privacy-main-title{
-    font-size: 26px !important;
-  }
-  .privacy-title {
-    font-size: 26px !important;
-    text-align: center !important;
-  }
-  .accordion-main-container{
-    padding: 0px 10px !important;
-  }
-  .privacy-descr {
-    font-size: 19px !important;
-    text-align: start !important;
-    width: 100% !important;
-  }
-  .privacy-intro {
-    margin-bottom: 10px;
-    
-  }
- 
-  .privacy-intro .privacy-image {
-    height: auto;
-    width: 90% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+    padding: 10px !important;
   }
 
   .header {
+    margin-bottom: 0 !important;
     font-size: 1.2rem !important;
   }
+
+  .privacy-main-title {
+    font-size: 26px !important;
+    font-weight: bold !important;
+  }
+
+  .MuiTypography-h5.privacy-title {
+    font-size: 29px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    padding:  0 !important;
+  }
+
+  .accordion-main-container {
+    padding: 0 10px !important;
+  }
+
+  .MuiTypography-body1.privacy-descr {
+    font-size: 16px !important;
+    text-align: start !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .MuiGrid-root.privacy-intro {
+    margin-bottom: 0px !important;
+  }
+
+  .privacy-intro .privacy-image {
+    height: auto !important;
+    width: 90% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+ 
 
   .contact-info {
     font-size: 0.8rem !important;
@@ -193,11 +204,17 @@
 
   .left-container,
   .right-container {
-    padding: 5px;
+    padding: 0px !important;
   }
 
-  .accordion {
-    margin-bottom: 8px;
-
+  .MuiAccordion-root.accordion {
+    margin-bottom: 8px !important;
+    padding: 0px !important;
   }
+  .section-title{
+    font-size: 1.2rem !important;
+    color: #f9f9f9 !important;
+    padding: 0px !important;
+  }
+
 }
