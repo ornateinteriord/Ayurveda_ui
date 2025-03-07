@@ -68,7 +68,7 @@ const Testimonials = () => {
     <Box className="testimonials-section">
       <Container maxWidth="lg">
         <Box className="testimonials-header">
-          <Typography variant="h2" className="section-title">
+          <Typography variant="h2" className="testimonials-title">
             Happy Customers
           </Typography>
           <Typography variant="subtitle1" className="section-subtitle">

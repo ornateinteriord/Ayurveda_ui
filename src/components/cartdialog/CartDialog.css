@@ -1,0 +1,128 @@
+/* Cart Container */
+.cartContainer {
+  max-width: 100% !important;
+  margin-top: 80px !important;
+  padding: 30px !important;
+  justify-self: center !important;
+
+}
+
+.cartTitle {
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  font-weight: bold !important;
+}
+
+.cart-main-conatiner {
+  display: flex !important;
+ justify-content: space-between !important;
+  gap: 100px !important;
+}
+
+/* Cart Item Styling */
+.cartItem {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 10px !important;
+
+}
+
+.cartItemImage {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+}
+
+.cart-price-q {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  gap: 40px !important;
+}
+
+.cartItemDetails {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.cartItemName {
+  font-weight: bold;
+}
+
+.cartItemPrice {
+  font-weight: bold;
+  color: #2E7D32;
+}
+
+/* Cart Summary Styling */
+.cartSummary {
+  width: 100% !important;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.couponCodeInput {
+  flex: 1;
+}
+
+.applyCouponButton {
+  white-space: nowrap;
+}
+
+.paymentMethodSelect {
+  width: 100%;
+}
+
+.totalAmount {
+  font-weight: bold;
+}
+
+/* Buttons Styling */
+.continueShoppingButton {
+  border-color: #2E7D32;
+  color: #2E7D32;
+}
+
+.continueShoppingButton:hover {
+  background: #2E7D32;
+  color: #fff;
+}
+
+.checkoutButton {
+  background: #2E7D32;
+  color: #fff;
+}
+
+.checkoutButton:hover {
+  background: #1B5E20;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cart-main-conatiner {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .cartItem {
+    display: flex !important;
+   align-items: center !important;
+   justify-content:  center !important;
+   
+  }
+
+  .cart-price-q {
+    flex-direction: row !important;
+    align-self: last baseline !important;
+    /* align-items: flex-start !important; */
+  }
+
+  .cartSummary {
+    width: 100% !important;
+  }
+}

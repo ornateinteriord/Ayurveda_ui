@@ -92,6 +92,8 @@
 /* why choose us */
 .about-content {
   padding: 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .about-content h5 {

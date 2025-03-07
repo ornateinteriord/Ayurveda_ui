@@ -1,7 +1,8 @@
 import React from 'react';
-import { Typography, Container, Grid, TextField, Button, Card, CardContent, Link, ThemeProvider, createTheme, CssBaseline } from '@mui/material';
+import { Typography, Container, Grid, TextField, Button, Card, CardContent, Link, ThemeProvider, createTheme, CssBaseline,Box } from '@mui/material';
 import { Email, Phone, LocationOn } from '@mui/icons-material';
 import './ContactUs.css'; // Import the CSS file
+
 
 // Define the theme
 const theme = createTheme({
@@ -44,11 +45,11 @@ const ContactUs = () => {
           {/* Contact Form */}
           <Grid item xs={12} md={6} className="contact-location-cont">
             <Card className="contact-form-card">
-              <CardContent>
-                <Typography variant="h5" gutterBottom>
+              <CardContent className='cord-content'>
+                <Typography variant="h5" gutterBottom className='main-title'>
                   Send Us a Message
                 </Typography>
-                <form>
+                <form className='contact-card-form'>
                   <TextField
                     fullWidth
                     label="Your Name"
@@ -84,7 +85,17 @@ const ContactUs = () => {
                     required
                     className="form-input"
                   />
+                  <Box className="form-btn">
+                
                   <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    className="submit-button"
+                  >
+                    Clear
+                  </Button>
+                    <Button
                     type="submit"
                     variant="contained"
                     color="primary"
@@ -93,6 +104,7 @@ const ContactUs = () => {
                   >
                     Send Message
                   </Button>
+                  </Box>
                 </form>
               </CardContent>
             </Card>
@@ -102,7 +114,7 @@ const ContactUs = () => {
           <Grid item xs={12} md={6}>
             <Card className="contact-details-card">
               <CardContent>
-                <Typography variant="h5" gutterBottom>
+                <Typography variant="h5" gutterBottom className='main-title'>
                   Our Contact Information
                 </Typography>
                 <Typography variant="body1" color="textSecondary" paragraph>

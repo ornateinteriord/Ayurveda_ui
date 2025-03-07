@@ -1,0 +1,203 @@
+/* Herbs.css */
+
+/* Container */
+.herbs-container {
+  /* padding: 0 32px !important;  */
+  max-width: 100% !important; 
+  /* margin: 0 auto; */
+}
+
+/* Title */
+.herbs-title {
+  font-weight: bold !important;
+  color: #1b064a !important;
+  text-align: center !important;
+  margin-bottom: 30px !important; /* Reduced margin */
+  font-size: 2.2rem !important; /* Adjusted font size */
+}
+
+/* Product card container */
+.product-card-container {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); /* Set fixed 300px width */
+  gap: 16px; /* Adjust gap for better spacing */
+  justify-content: center; /* Ensures cards stay centered */
+  margin-bottom: 20px !important;
+}
+
+
+/* Product card */
+.product-card {
+  width: 100% !important; /* Full width within the grid */
+  height: auto !important; /* Auto height for flexibility */
+  display: flex !important;
+  flex-direction: column !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+  overflow: hidden; /* Ensure content stays within the card */
+  margin-bottom: 5px !important;
+}
+
+.product-card:hover {
+  transform: scale(1.02) !important; /* Slightly increased scale */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+.product-card-container{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Product image */
+.product-image {
+  width: 100% !important; /* Ensure image takes full width */
+  height: 200px !important; /* Fixed height for consistency */
+  object-fit: cover !important; /* Ensure image covers the area */
+  border-radius: 5px 5px 0 0 !important; /* Rounded corners only at the top */
+}
+
+/* Product content */
+.MuiCardContent-root.product-content {
+  flex-grow: 1 !important;
+  padding: 10px !important; /* Adjusted padding */
+
+}
+
+.MuiTypography-root.product-name {
+  font-weight: bold !important;
+  color: #1b064a !important;
+  margin-bottom: 4px !important; /* Adjusted margin */
+  font-size: 1.2rem !important; /* Adjusted font size */
+  text-align: start !important;
+}
+
+.MuiTypography-root.product-description {
+  color: #555 !important;
+  margin-bottom: 4px !important; /* Adjusted margin */
+  font-size: 0.9rem !important; /* Adjusted font size */
+  text-align: start !important;
+}
+
+.product-price {
+  font-weight: bold !important;
+  color: #16ac5f !important;
+  font-size: 1.1rem !important; /* Adjusted font size */
+}
+
+
+.MuiBox-root.quantity-controls {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: start !important;
+  margin: 3px 3px !important; 
+}
+
+.MuiTypography-root.quantity {
+  margin: 0 0px !important; /* Adjusted margin */
+  font-size: 1rem !important; /* Adjusted font size */
+}
+
+/* Add to cart button */
+.MuiButton-root.add-to-cart {
+  width: 60% !important;
+  background-color: #1b064a !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 8px 8px !important; /* Adjusted padding */
+  border-radius: 4px !important;
+  transition: background-color 0.3s ease-in-out !important;
+  font-size: 1rem !important; /* Adjusted font size */
+  margin-bottom: 10px !important;
+  text-transform: capitalize !important;
+}
+
+.add-to-cart:hover {
+  background-color: #16ac5f !important;
+}
+
+/* ---- Responsive Design ---- */
+
+/* Extra Large Screens (1200px and above) */
+@media (max-width: 1200px) {
+  .herbs-container {
+    padding: 0 24px !important; /* Adjusted padding */
+  }
+}
+
+/* Large Screens (992px - 1199px) */
+@media (max-width: 992px) {
+  .herbs-container {
+    padding: 0 16px !important; /* Adjusted padding */
+  }
+
+  .product-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted grid layout */
+    gap: 16px; /* Adjusted gap */
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 768px) {
+  .herbs-container {
+    padding: 0 12px !important; /* Adjusted padding */
+  }
+
+  .herbs-title {
+    font-size: 1.8rem !important; /* Adjusted font size */
+  }
+
+  .product-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjusted grid layout */
+    gap: 12px; /* Adjusted gap */
+  }
+}
+
+/* Mobile Screens (576px - 767px) */
+@media (max-width: 576px) {
+  .herbs-container {
+    padding: 0 8px !important; /* Adjusted padding */
+  }
+
+  .herbs-title {
+    font-size: 1.6rem !important; /* Adjusted font size */
+  }
+
+  .product-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted grid layout */
+    gap: 10px; /* Adjusted gap */
+  }
+}
+
+/* Small Mobile Screens (400px and below) */
+@media (max-width: 400px) {
+  .herbs-container {
+    padding: 0 8px !important; /* Adjusted padding */
+    justify-self: center !important;
+  }
+
+  .herbs-title {
+    font-size: 1.5rem !important; /* Adjusted font size */
+  }
+
+  .product-card-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 8px; /* Adjusted gap */
+  }
+  .product-card{
+    padding: 0 !important;
+  /* display: flex !important;
+  align-items: center !important;
+  justify-content: center !; */
+  }
+  /* .product-content{
+    display: flex !important;
+    align-items: center !important;
+   flex-direction: column !important;
+  } */
+  .MuiButton-root.add-to-cart{
+    width: 80% !important;
+    font-size: 0.7rem !important;
+    justify-self: flex-start !important;
+  }
+}

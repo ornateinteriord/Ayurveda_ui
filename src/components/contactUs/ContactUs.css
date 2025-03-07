@@ -16,7 +16,9 @@
   color:#333 !important ;
   margin-top: 0 !important;
 }
-
+.main-title{
+  text-align: center !important;
+}
 .contact-form-card,
 .contact-details-card {
   border-radius: 8px;
@@ -25,6 +27,12 @@
   margin-bottom: 10px !important;
  width: 100% !important;
 
+
+}
+.contact-card-form{
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 10px !important;
 }
 
 .contact-form-card:hover,
@@ -34,6 +42,13 @@
 
 .form-input {
   margin-bottom: 16px;
+  width: 100% !important;
+}
+.form-btn{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: end !important;
+  gap: 10px !important;
 }
 
 .submit-button {
@@ -42,6 +57,7 @@
    font-size: 18px !important;
   color: white !important;
   text-transform: capitalize !important;
+  padding: 6 !important;
 }
 
 .submit-button:hover {
@@ -107,7 +123,8 @@
 
 @media (max-width: 400px) {
   .contact-us-container{
-    padding: 0px !important;
+    padding: 5px !important;
+    width: 100% !important;
   }
   .header {
     font-size: 24px; /* Smallest font for very small devices */
@@ -119,18 +136,38 @@
     margin: 0 !important;
   }
 
-  .contact-us-container {
-    padding: 0px 5px !important; /* Minimal padding for very small screens */
-
+  .contact-form-card,
+  .contact-details-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 10px !important;
+   width: 100% !important;
+  padding: 10px !important;
+   }
+  .cord-content{
+    padding: 0 !important;
+  }
+  .contact-card-form{
+    padding: 0 !important;
   }
 
   .form-input {
-    padding: 0px !important; /* Minimal padding for inputs */
+    padding: 0px !important; 
+   width: 90% !important;
    
   }
-
+.main-title{
+  text-align: center !important;
+}
+.form-btn{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
   .submit-button {
-    padding: 6px 12px; /* Minimal padding for button */
+    padding: 6px 12px; 
+    margin: 0 !important;
   }
 
   .map-container {

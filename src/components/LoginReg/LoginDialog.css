@@ -1,0 +1,36 @@
+.dialog-title {
+  text-align: center !important;
+  font-weight: bold !important;
+}
+
+.form-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+}
+
+.MuiTextField-root {
+  width: 350px !important;
+  margin: 10px !important;
+}
+
+.MuiGrid-item {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.cancel {
+  background-color: #ccc !important;
+  color: black !important;
+}
+
+.login, .register-button {
+  background-color: #4CAF50 !important;
+  color: white !important;
+}
+
+.login:hover, .register-button:hover {
+  background-color: #45a049 !important;
+}

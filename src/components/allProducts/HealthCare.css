@@ -1,0 +1,208 @@
+/* Herbs.css */
+
+/* Container */
+.health-container {
+    padding: 0 32px !important; /* Reduced padding */
+    max-width: 100% !important; /* Added max-width for better control */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Title */
+  .health-title {
+    font-weight: bold !important;
+    color: #1b064a !important;
+    text-align: center !important;
+    margin-bottom: 30px !important; /* Reduced margin */
+    font-size: 2.2rem !important; /* Adjusted font size */
+  }
+  
+  /* Product card container */
+  .product-card-container {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); /* Set fixed 300px width */
+    gap: 16px; /* Adjust gap for better spacing */
+    justify-content: center; /* Ensures cards stay centered */
+    margin-bottom: 20px !important;
+  }
+  
+  
+  /* Product card */
+  .product-card {
+    width: 100% !important; /* Full width within the grid */
+    height: auto !important; /* Auto height for flexibility */
+    display: flex !important;
+    flex-direction: column !important;
+    border-radius: 8px !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+    overflow: hidden; /* Ensure content stays within the card */
+    margin-bottom: 5px !important;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.02) !important; /* Slightly increased scale */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  /* Product image */
+  .product-image {
+    width: 100%; /* Ensure image takes full width */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 5px 5px 0 0 !important; /* Rounded corners only at the top */
+  }
+  
+  /* Product content */
+  .product-content {
+    flex-grow: 1 !important;
+    padding: 16px !important; /* Adjusted padding */
+  }
+  
+  .product-name {
+    font-weight: bold !important;
+    color: #1b064a !important;
+    margin-bottom: 8px !important; /* Adjusted margin */
+    font-size: 1.2rem !important; /* Adjusted font size */
+  }
+  
+  .product-description {
+    color: #555 !important;
+    margin-bottom: 8px !important; /* Adjusted margin */
+    font-size: 0.9rem !important; /* Adjusted font size */
+  }
+  
+  .product-price {
+    font-weight: bold !important;
+    color: #16ac5f !important;
+    font-size: 1.1rem !important; /* Adjusted font size */
+  }
+  
+  /* Quantity controls */
+  .quantity-controls {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 8px 0 !important; /* Adjusted margin */
+  }
+  
+  .quantity {
+    margin: 0 8px !important; /* Adjusted margin */
+    font-size: 1rem !important; /* Adjusted font size */
+  }
+  
+  /* Add to cart button */
+  .add-to-cart {
+    width: 100% !important;
+    background-color: #1b064a !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding: 10px 16px !important; /* Adjusted padding */
+    border-radius: 4px !important;
+    transition: background-color 0.3s ease-in-out !important;
+    font-size: 1rem !important; /* Adjusted font size */
+  }
+  
+  .add-to-cart:hover {
+    background-color: #16ac5f !important;
+  }
+  /* ---- Responsive Design ---- */
+  
+  /* Extra Large Screens (1200px and above) */
+  @media (max-width: 1200px) {
+    .health-container {
+      padding: 20px !important;
+    }
+  }
+  
+  /* Large Screens (992px - 1199px) */
+  @media (max-width: 992px) {
+    .health-container {
+      padding: 58px !important;
+    }
+  
+    .product-name {
+      font-size: 1.2rem !important;
+    }
+  
+    .product-price {
+      font-size: 1rem !important;
+    }
+    .product-card{
+      width: 100% !important;
+    }
+  }
+  
+  /* Tablets (768px - 991px) */
+  @media (max-width: 768px) {
+    .health-container {
+      padding: 16px !important;
+    }
+  
+    .health-title {
+      font-size: 1.8rem !important;
+    }
+  
+    .product-card {
+      margin-bottom: 16px !important;
+    }
+  
+    .quantity {
+      font-size: 1.1rem !important;
+    }
+  
+    .add-to-cart {
+      font-size: 1rem !important;
+    }
+  }
+  
+  /* Mobile Screens (576px - 767px) */
+  @media (max-width: 576px) {
+    .health-container {
+      padding: 12px !important;
+    }
+  
+    .health-title {
+      font-size: 1.6rem !important;
+    }
+  
+    .product-name {
+      font-size: 1.1rem !important;
+    }
+  
+    .product-description {
+      font-size: 0.85rem !important;
+    }
+  
+    .product-price {
+      font-size: 0.95rem !important;
+    }
+  
+    .add-to-cart {
+      font-size: 0.9rem !important;
+    }
+  }
+  
+  /* Small Mobile Screens (400px and below) */
+  @media (max-width: 400px) {
+    .health-container {
+      padding: 10px !important;
+    }
+  
+    .health-title {
+      font-size: 1.5rem !important;
+    }
+  
+    .product-card {
+      margin-bottom: 12px !important;
+    }
+  
+    .quantity {
+      font-size: 1rem !important;
+    }
+  
+    .add-to-cart {
+      font-size: 0.85rem !important;
+    }
+  }
+  

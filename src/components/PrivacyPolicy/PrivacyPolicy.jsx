@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
   const rightSections = privacyPolicySections.slice(middleIndex);
 
   return (
-    <Container  className="privacy-policy-container">
+    <Box className="privacy-policy-container">
 
       {/* Privacy Description and Image */}
       <Grid container spacing={4} alignItems="center" className="privacy-intro">
@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
                 onChange={handleRightChange(index)}
                 className="accordion"
               >
-                <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}>
+                <AccordionSummary var expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}>
                   <Typography variant="h6" className='section-title'>{section.title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
         </Link>
         .
       </Typography>
-    </Container>
+    </Box>
   );
 };
 

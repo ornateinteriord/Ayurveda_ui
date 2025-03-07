@@ -10,6 +10,7 @@ import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CartDialog from "../cartdialog/CartDialog";
+import LoginDialog from "../LoginReg/LoginDialog";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -17,6 +18,7 @@ const Navbar = () => {
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false); // State for cart dialog
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
 
   const handleMenuClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -34,12 +36,21 @@ const Navbar = () => {
   const handleMobileDropdownToggle = () => {
     setMobileDropdownOpen(!mobileDropdownOpen);
   };
-  const handleCartOpen = () => {
-    setCartOpen(true);
+  // const handleCartOpen = () => {
+  //   setCartOpen(true);
+  // };
+
+  const handleLoginOpen = () => {
+    setLoginOpen(true);
   };
 
-  const handleCartClose = () => {
-    setCartOpen(false);
+  // const handleCartClose = () => {
+  //   setCartOpen(false);
+  // };
+
+
+  const handleLoginClose = () => {
+    setLoginOpen(false);
   };
 
   return (
@@ -72,11 +83,11 @@ const Navbar = () => {
            <Box className="cart-container" gap={3} >
         {/* Cart Icon */}
         <Box display={'flex'} alignItems={'center'}justifyContent={'center'} gap={1} >
-        <IconButton className="carticon" color="inherit" onClick={handleCartOpen}>
-          <ShoppingCartIcon style={{fontSize:'35px'}}/>
+        <IconButton className="carticon" color="inherit" >
+        <Link to={'cartdialog'} style={{color:'#fff'}}><ShoppingCartIcon style={{fontSize:'35px'}}/></Link>  
         </IconButton>
         {/* Login Button (Desktop) */}
-        <Button className="login-button" component={Link} to="/login">Login</Button>
+        <Button className="login-button"   onClick={handleLoginOpen}>Login</Button>
         </Box>
       <Box>
         {/* Mobile Menu Icon */}
@@ -103,7 +114,8 @@ const Navbar = () => {
           <Collapse in={mobileDropdownOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button component={Link} to="/products/herbs" onClick={handleDrawerToggle}>Herbs<ListItemText /></ListItem>
-              <ListItem button component={Link} to="/products/oils" onClick={handleDrawerToggle}>Health Care<ListItemText  /></ListItem>
+              <ListItem button component={Link} to="/products/oils" onClick={handleDrawerToggle}>Oils<ListItemText /></ListItem>
+              <ListItem button component={Link} to="/products/health" onClick={handleDrawerToggle}>Health Care<ListItemText  /></ListItem>
               <ListItem button component={Link} to="/products/foods" onClick={handleDrawerToggle}>Foods<ListItemText  /></ListItem>
             </List>
           </Collapse>
@@ -114,7 +126,10 @@ const Navbar = () => {
       </Drawer>
 
          {/* Cart Dialog */}
-         <CartDialog open={cartOpen} onClose={handleCartClose} />
+         {/* <CartDialog open={cartOpen} onClose={handleCartClose} /> */}
+
+           {/* Login/Register Dialog */}
+      <LoginDialog open={loginOpen} onClose={handleLoginClose} />
     </AppBar>
   );
 };

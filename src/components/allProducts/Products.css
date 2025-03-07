@@ -1,0 +1,108 @@
+.products-container {
+    padding: 0px 30px !important;
+    text-align: center !important;
+    background-color: #f9f9f9 !important;
+    min-height: 100vh !important;
+    margin-top: 90px !important;
+    
+}
+.products-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    
+}
+
+.products-title {
+    font-weight: bold !important;
+    color: #1b064a !important;
+    font-size: 2rem !important;
+}
+
+.search-box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px !important;
+}
+
+.search-input {
+    width: 350px !important;
+}
+
+.search-button {
+    height: 51px !important;
+    text-transform: none !important;
+    width: 120px !important;
+    font-weight: bold !important;
+    font-size: 17px !important;
+    min-height: 45px !important;
+}
+
+.product-list {
+    margin-top: 0px !important;
+}
+
+.product-item {
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .products-title {
+        font-size: 1.8rem !important;
+    }
+
+    .search-input {
+        width: 250px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-title {
+        font-size: 1.6rem !important;
+    }
+
+    .search-input {
+        width: 200px !important;
+    }
+
+    .search-box {
+        flex-direction: column !important;
+        gap: 5px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .MuiBox-root.products-container{
+        padding: 0 !important;
+    }
+    .products-title {
+        font-size: 1.4rem !important;
+    }
+.search-box{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content:  center !important;
+}
+    .search-input {
+        width: 100% !important;
+        /* max-width: 150px !important; */
+    }
+
+    .search-button {
+        width: 100px !important;
+        font-size: 15px !important;
+    }
+
+    .product-item {
+        font-size: 1rem !important;
+    }
+    .products-header{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}

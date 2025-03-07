@@ -39,19 +39,19 @@ const ProductsContainer = () => {
   };
 
   return (
-    <Box className="products-container">
+    <Box className="products-home-container">
       <Box>
-        <Typography className="product-tittle">
+        <Typography className="product-home-tittle">
           Products
         </Typography>
       </Box>
-      <Box className="products-container">
+      <Box className="products-home-container">
       {products.map((product) => (
-        <Card key={product.id} className="product-card">
+        <Card key={product.id} className="product-home-card">
           <CardMedia sx={{ width: "100%", height: "240px", borderRadius: "10px" }} component="img" image={product.image} 
           alt={product.name} className="product-image" />
           <CardContent sx={{ width: "100%" }}>
-            <Typography variant="h6" className="product-name">{product.name}</Typography>
+            <Typography variant="h6" className="product-home-name">{product.name}</Typography>
 
         
             <Box display={'flex'} alignItems={'center'} gap={2} justifyContent={'flex-start'}>
@@ -60,19 +60,19 @@ const ProductsContainer = () => {
             </Typography>
 
             {/* Quantity Controls */}
-            <Box className="quantity-controls">
+            <Box className="quantity-home-controls">
               <IconButton color="error" onClick={() => handleDecrease(product.id)} disabled={quantities[product.id] === 0}>
                 <RemoveIcon sx={{fontSize:'15px'}}/>
               </IconButton>
-              <Typography variant="body1" className="quantity-text">{quantities[product.id] || 0}</Typography>
+              <Typography variant="body1" className="quantity-home-text">{quantities[product.id] || 0}</Typography>
               <IconButton color="success" onClick={() => handleIncrease(product.id)}>
                 <AddIcon sx={{fontSize:'15px'}}/>
               </IconButton>
             </Box>
             </Box>
-            <Box className="card-actions">
-              <Button variant="contained" className="cart-button" startIcon={<ShoppingCartIcon style={{ color: "green", fontSize: "30px" }} />}>
-                Buy now
+            <Box className="card-home-actions">
+              <Button variant="contained" className="cart-button" startIcon={<ShoppingCartIcon style={{ color: "#fff", fontSize: "30px" }} />}>
+                add to cart
               </Button>
               <IconButton  onClick={() => handleInfoClick(product)}>
                 <InfoIcon style={{fontSize:'25px'}} />

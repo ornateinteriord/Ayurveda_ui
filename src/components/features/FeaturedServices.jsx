@@ -15,7 +15,7 @@ const services = [
 const FeaturedServices = () => {
   return (
     <Box className="featured-services">
-      <Typography variant="h4" className="section-title">Why Shop With Us?</Typography>
+      <Typography variant="h4" className="featured-title">Why Shop With Us?</Typography>
       <Box className="services-container">
         {services.map((service, index) => (
           <Box key={index} className="service-item">
