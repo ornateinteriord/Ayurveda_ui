@@ -53,7 +53,7 @@ const Oils = () => {
       <Typography variant="h4" gutterBottom className="oils-title">
         Oils
       </Typography>
-      <Grid container spacing={1} className='product-card-grid'>
+      <Grid container  className='product-card-grid'>
         {products.map((product, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={index} className='product-card-container'>
             <Card className="product-card">

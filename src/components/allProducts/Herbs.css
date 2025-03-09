@@ -1,10 +1,9 @@
-/* Herbs.css */
 
-/* Container */
 .herbs-container {
   /* padding: 0 32px !important;  */
   max-width: 100% !important; 
-  /* margin: 0 auto; */
+
+
 }
 
 /* Title */
@@ -12,7 +11,7 @@
   font-weight: bold !important;
   color: #1b064a !important;
   text-align: center !important;
-  margin-bottom: 30px !important; /* Reduced margin */
+  margin-bottom: 20px !important; 
   font-size: 2.2rem !important; /* Adjusted font size */
 }
 
@@ -22,9 +21,10 @@
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); /* Set fixed 300px width */
   gap: 16px; /* Adjust gap for better spacing */
-  justify-content: center; /* Ensures cards stay centered */
+  justify-content: center !important; /* Ensures cards stay centered */
   margin-bottom: 20px !important;
 }
+
 
 
 /* Product card */
@@ -173,22 +173,28 @@
 @media (max-width: 400px) {
   .herbs-container {
     padding: 0 8px !important; /* Adjusted padding */
-    justify-self: center !important;
+   
   }
 
   .herbs-title {
-    font-size: 1.5rem !important; /* Adjusted font size */
+    font-size: 1.7rem !important; /* Adjusted font size */
+    margin-top: 10px !important;
   }
+ 
 
   .product-card-container {
+    width: 100% !important;
     grid-template-columns: 1fr; /* Single column layout */
     gap: 8px; /* Adjusted gap */
+   
   }
   .product-card{
     padding: 0 !important;
+    width: 100% !important;
   /* display: flex !important;
   align-items: center !important;
   justify-content: center !; */
+  
   }
   /* .product-content{
     display: flex !important;

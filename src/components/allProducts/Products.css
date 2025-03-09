@@ -21,6 +21,7 @@
 }
 
 .search-box {
+    width: 100%;
     display: flex !important;
     align-items: center !important;
     justify-content: flex-end !important;
@@ -77,10 +78,13 @@
 
 @media (max-width: 480px) {
     .MuiBox-root.products-container{
-        padding: 0 !important;
+        padding: 7px !important;
+       
+       
     }
     .products-title {
         font-size: 1.4rem !important;
+        margin-bottom: 10px !important;
     }
 .search-box{
     display: flex !important;
@@ -90,11 +94,13 @@
 }
     .search-input {
         width: 100% !important;
+        height: 53px !important;
         /* max-width: 150px !important; */
     }
 
     .search-button {
         width: 100px !important;
+        height: 53px !important;
         font-size: 15px !important;
     }
 

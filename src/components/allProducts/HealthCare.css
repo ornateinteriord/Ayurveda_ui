@@ -2,7 +2,7 @@
 
 /* Container */
 .health-container {
-    padding: 0 32px !important; /* Reduced padding */
+    /* padding: 0 32px !important; */
     max-width: 100% !important; /* Added max-width for better control */
     margin: 0 auto; /* Center the container */
   }
@@ -12,7 +12,7 @@
     font-weight: bold !important;
     color: #1b064a !important;
     text-align: center !important;
-    margin-bottom: 30px !important; /* Reduced margin */
+    margin-bottom: 40px !important; /* Reduced margin */
     font-size: 2.2rem !important; /* Adjusted font size */
   }
   
@@ -190,7 +190,8 @@
     }
   
     .health-title {
-      font-size: 1.5rem !important;
+      font-size: 1.7rem !important;
+      margin-bottom: 10px !important;
     }
   
     .product-card {

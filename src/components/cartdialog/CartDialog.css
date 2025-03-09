@@ -44,69 +44,75 @@
 }
 
 .cartItemDetails {
-  flex: 1;
-  padding: 0 10px;
+  flex: 1 !important;
+  padding: 0 10px !important;
 }
 
 .cartItemName {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .cartItemPrice {
-  font-weight: bold;
-  color: #2E7D32;
+  font-weight: bold !important;
+  color: #2E7D32 !important;
 }
 
 /* Cart Summary Styling */
 .cartSummary {
-  width: 100% !important;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  background: #f9f9f9;
+  width: 100% !important  ;
+  border: 1px solid #ddd !important;
+  padding: 20px !important;
+  border-radius: 8px !important;
+  background: #f9f9f9 !important;
 }
 
 .couponCodeInput {
-  flex: 1;
+  flex: 1 !important;
 }
 
 .applyCouponButton {
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
 
 .paymentMethodSelect {
-  width: 100%;
+  width: 100% !important;
 }
 
 .totalAmount {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 /* Buttons Styling */
 .continueShoppingButton {
-  border-color: #2E7D32;
+  border-color: #2E7D32 !important;
   color: #2E7D32;
 }
 
 .continueShoppingButton:hover {
-  background: #2E7D32;
+  background: #2E7D32 !important;
   color: #fff;
 }
 
 .checkoutButton {
-  background: #2E7D32;
+  background: #2E7D32 !important;
   color: #fff;
 }
 
 .checkoutButton:hover {
-  background: #1B5E20;
+  background: #1B5E20 !important;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .cartContainer{
+    padding: 10px 0px !important;
+  }
   .cart-main-conatiner {
     flex-direction: column !important;
     gap: 10px !important;
+  }
+  .cartTitle{
+    margin-bottom: 5px !important;
   }
 
   .cartItem {
@@ -116,13 +122,20 @@
    
   }
 
-  .cart-price-q {
-    flex-direction: row !important;
-    align-self: last baseline !important;
-    /* align-items: flex-start !important; */
-  }
-
   .cartSummary {
     width: 100% !important;
   }
+  .continueShoppingButton{
+    text-transform: capitalize !important;
+    font-size: 1rem !important;
+    border: none !important;
+    color: #fff !important;
+    background-color: #2E7D32 !important;
+  }
+  
+  .checkoutButton {
+    text-transform: capitalize !important;
+    font-size: 1rem !important;
+  }
+  
 }

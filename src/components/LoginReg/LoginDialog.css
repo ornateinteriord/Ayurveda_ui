@@ -1,36 +1,46 @@
-.dialog-title {
-  text-align: center !important;
-  font-weight: bold !important;
+
+.auth-dialog .MuiDialog-paper {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f4f1e9;
 }
 
-.form-container {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 20px !important;
+.auth-title {
+  text-align: center;
+  color: #4a773c;
 }
 
-.MuiTextField-root {
-  width: 350px !important;
-  margin: 10px !important;
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* .auth-dialog .MuiDialog-paper {
+  width: 550px; 
+  max-width: 90%; 
+} */
+
+
+.auth-input .MuiOutlinedInput-root {
+ 
+  border-radius: 8px;
+  width: 250px !important;
 }
 
-.MuiGrid-item {
-  display: flex !important;
-  justify-content: center !important;
+.auth-button {
+  background-color: #4a773c !important;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
 }
 
-.cancel {
-  background-color: #ccc !important;
-  color: black !important;
+.auth-close {
+  margin-top: 10px;
 }
 
-.login, .register-button {
-  background-color: #4CAF50 !important;
-  color: white !important;
-}
-
-.login:hover, .register-button:hover {
-  background-color: #45a049 !important;
+.auth-toggle {
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #4a773c;
 }

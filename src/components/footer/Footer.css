@@ -270,7 +270,9 @@
 
 /* Footer Bottom */
 .footer-bottom {
-  text-align: center;
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 25px;
   margin-top: 30px;
@@ -279,7 +281,7 @@
 .footer-bottom p {
   font-size: 14px;
   color: #e9ecef;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .footer-links-bottom {
@@ -388,9 +390,14 @@
   .footer{
     padding: 20px;
   }
+  .footer-bottom{
+    display: block;
+   text-align: center;
+  }
   .footer-links-bottom {
     flex-direction: row;
     gap: 15px;
+  
   }
   
   .newsletter-container {
@@ -418,5 +425,8 @@
   }
 .footer-section,li{
   text-align: start !important;
+}
+.footer-bottom p {
+  margin-bottom: 15px;
 }
 }
