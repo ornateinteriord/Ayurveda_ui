@@ -17,6 +17,7 @@ import Oils from './components/allProducts/Oils';
 import Healthcare from './components/allProducts/HealthCare';
 import Foods from './components/allProducts/Foods';
 import CartDialog from './components/cartdialog/CartDialog';
+import "./App.css"
 
 
 const App = () => {

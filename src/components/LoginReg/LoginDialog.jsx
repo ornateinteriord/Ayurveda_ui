@@ -17,7 +17,7 @@ const LoginDialog = ({ open, onClose }) => {
         <form className="auth-form">
           {!isLogin && (
             <>
-              <TextField label="Full Name" variant="outlined" fullWidth className="auth-input" />
+              <TextField label="Full Name" variant="outlined" fullWidth className="auth-input"  />
               <FormControl fullWidth className="auth-input">
                 <InputLabel>Gender</InputLabel>
                 <Select value={gender} onChange={(e) => setGender(e.target.value)}>

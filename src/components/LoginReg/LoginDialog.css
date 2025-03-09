@@ -1,27 +1,27 @@
 .auth-dialog .MuiDialog-paper {
-  padding: 20px;
-  border-radius: 12px;
-  background: #f4f1e9;
-  width: 100%;
-  max-width: 450px; /* Adjusts max width for different screen sizes */
+  padding: 10px !important;
+  border-radius: 12px !important;
+  background: #f4f1e9 !important;
+  width: 100% !important ;
+  max-width: 450px !important; /* Adjusts max width for different screen sizes */
 }
 
 .auth-title {
-  text-align: center;
-  color: #4a773c;
-  font-size: 1.5rem;
+  text-align: center !important;
+  color: #4a773c !important;
+  font-size: 1.5rem !important;
 }
 
 .auth-form {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   gap: 15px;
-  align-items: center;
+  align-items: center !important;
 }
 
 .auth-input {
   width: 100% !important; /* Ensures full width in form */
-  margin-top: 10px !important;
+  margin-top: 0px !important ;
 }
 
 .auth-input .MuiOutlinedInput-root {
