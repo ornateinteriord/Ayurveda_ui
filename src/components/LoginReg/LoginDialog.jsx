@@ -37,9 +37,9 @@ const LoginDialog = ({ open, onClose }) => {
           <Button variant="contained" color="primary" fullWidth className="auth-button">
             {isLogin ? "Login" : "Register"}
           </Button>
-          <Button variant="text" color="secondary" fullWidth className="auth-close" onClick={onClose}>
+          {/* <Button variant="text" color="secondary" fullWidth className="auth-close" onClick={onClose}>
             Close
-          </Button>
+          </Button> */}
         </form>
         <Typography className="auth-toggle" onClick={toggleForm}>
           {isLogin ? "Don't have an account? Register" : "Already have an account? Login"}

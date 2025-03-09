@@ -121,7 +121,7 @@ const Navbar = () => {
           </Collapse>
           <ListItem button component={Link} to="/privacy" onClick={handleDrawerToggle}>Privacy & policy<ListItemText  /></ListItem>
           <ListItem button component={Link} to="/contact" onClick={handleDrawerToggle}>Contact<ListItemText  /></ListItem>
-          <ListItem button component={Link} to="/login" onClick={handleDrawerToggle}>Login<ListItemText /></ListItem>
+          <ListItem button  onClick={handleLoginOpen}>Login<ListItemText /></ListItem>
         </List>
       </Drawer>
 
