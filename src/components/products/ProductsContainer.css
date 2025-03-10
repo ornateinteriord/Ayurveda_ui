@@ -207,6 +207,7 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .products-container {
       flex-direction: column;

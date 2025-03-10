@@ -128,7 +128,7 @@
 /* Large Screens (992px - 1199px) */
 @media (max-width: 992px) {
   .herbs-container {
-    padding: 0 16px !important; /* Adjusted padding */
+    padding: 20px 16px !important; /* Adjusted padding */
   }
 
   .product-card-container {

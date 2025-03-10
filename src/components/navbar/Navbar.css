@@ -120,9 +120,12 @@
   border-radius: 5px;
 }
 /* Cart Icon */
-.cart-icon {
+.nav-cart-icon {
   margin-left: 20px;
-  color: white;
+  color: white !important;
+}
+.nav-cart-icon:hover{
+  color: #072474 !important;
 }
 .mobile-menu .MuiListItem-root {
   opacity: 0;

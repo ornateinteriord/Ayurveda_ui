@@ -118,7 +118,7 @@
   /* Large Screens (992px - 1199px) */
   @media (max-width: 992px) {
     .health-container {
-      padding: 58px !important;
+      padding:  20px 0 !important;
     }
   
     .product-name {

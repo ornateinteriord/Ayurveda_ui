@@ -28,15 +28,12 @@
   /* Large Screens (992px - 1199px) */
   @media (max-width: 992px) {
     .oils-container {
-      padding: 18px !important;
+      padding: 20px 16px !important; /* Adjusted padding */
     }
   
-    .product-name {
-      font-size: 1.2rem !important;
-    }
-  
-    .product-price {
-      font-size: 1rem !important;
+    .product-card-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted grid layout */
+      gap: 16px; /* Adjusted gap */
     }
   }
   

@@ -5,6 +5,7 @@ import hero4 from "../../assets/images/hero4.avif";
 import hero1 from "../../assets/images/hero1.avif";
 import hero2 from "../../assets/images/hero2.avif";
 import hero3 from "../../assets/images/hero3.avif";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -23,9 +24,10 @@ const Hero = () => {
         <Typography variant="body1" className="description">
           Discover the ancient wisdom of Ayurveda with our premium herbal products.
         </Typography>
-        <Button variant="contained" className="discover-btn">
+       <Link to={"about"}> <Button variant="contained" className="discover-btn">
           Discover More
         </Button>
+        </Link>
       </Box>
 
       {/* Right Side: Messy Styled Image Container */}

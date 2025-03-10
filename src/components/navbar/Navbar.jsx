@@ -84,7 +84,7 @@ const Navbar = () => {
         {/* Cart Icon */}
         <Box display={'flex'} alignItems={'center'}justifyContent={'center'} gap={1} >
         <IconButton className="carticon" color="inherit" >
-        <Link to={'cartdialog'} style={{color:'#fff'}}><ShoppingCartIcon style={{fontSize:'35px'}}/></Link>  
+        <Link to={'cartdialog'} style={{color:'#fff'}}><ShoppingCartIcon className="nav-cart-icon" style={{fontSize:'35px'}}/></Link>  
         </IconButton>
         {/* Login Button (Desktop) */}
         <Button className="login-button"   onClick={handleLoginOpen}>Login</Button>
