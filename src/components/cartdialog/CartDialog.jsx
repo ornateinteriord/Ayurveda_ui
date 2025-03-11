@@ -63,7 +63,7 @@ const CartDialog = () => {
         Shopping Cart
       </Typography>
       <Box   className="cart-main-conatiner">
-        <Grid item xs={12} md={7}>
+        <Grid item xs={12} md={7} className="left-containet">
           <List>
             {cartItems.map((item) => (
               <React.Fragment key={item.id}>
@@ -105,7 +105,7 @@ const CartDialog = () => {
           </List>
         </Grid>
 
-        <Grid item xs={12} md={5}>
+        <Grid item xs={12} md={5} className="right-containet">
           <Box className="cartSummary">
             <Box sx={{ display: "flex", alignItems: 'center', gap: 1, mb: 2 }}>
               <TextField
