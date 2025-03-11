@@ -123,16 +123,16 @@
 
 @media (max-width: 400px) {
   .contact-us-container{
-    padding: 5px !important;
+    padding: 10px !important;
     width: 100% !important;
   }
   .header {
-    font-size: 24px; /* Smallest font for very small devices */
-   margin-top: 80px !important;
+    font-size: 30px !important; /* Smallest font for very small devices */
+   margin-top: 75px !important;
   }
   .contact-desc{
-    font-size: 18px !important;
-    text-align: start !important;
+    font-size: 17px !important;
+    text-align: center !important;
     margin: 0 !important;
   }
 
@@ -154,10 +154,11 @@
 
   .form-input {
     padding: 0px !important; 
-   width: 90% !important;
+   width: 100% !important;
    
   }
 .main-title{
+  margin-top: 10px !important;
   text-align: center !important;
 }
 .form-btn{

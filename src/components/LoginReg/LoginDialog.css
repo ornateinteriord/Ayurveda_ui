@@ -30,9 +30,9 @@
 
 .auth-button {
   background-color: #4a773c !important;
-  color: white;
-  font-weight: bold;
-  padding: 12px 0;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 7px 0 !important;
   width: 100%;
 }
 
@@ -41,11 +41,11 @@
 }
 
 .auth-toggle {
-  text-align: center;
-  margin-top: 10px;
-  cursor: pointer;
-  color: #4a773c;
-  font-size: 0.9rem;
+  text-align: center !important;
+  margin-top: 10px !important;
+  cursor: pointer !important;
+  color: #4a773c !important;
+  font-size: 0.9rem !important;
 }
 
 /* Responsive Design */

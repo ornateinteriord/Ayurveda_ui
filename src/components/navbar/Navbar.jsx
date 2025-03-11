@@ -42,6 +42,8 @@ const Navbar = () => {
 
   const handleLoginOpen = () => {
     setLoginOpen(true);
+    setMobileOpen(false); // Close the mobile drawer
+  setMobileDropdownOpen(false);
   };
 
   // const handleCartClose = () => {
