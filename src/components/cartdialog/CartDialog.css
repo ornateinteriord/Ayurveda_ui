@@ -12,7 +12,7 @@
   text-align: center !important;
   margin-bottom: 20px !important;
   font-weight: bold !important;
-  color: black !important;
+  color: #2E7D32 !important;
 }
 .left-containet{
   width: 90% !important;
@@ -91,12 +91,13 @@
 
 /* Buttons Styling */
 .continueShoppingButton {
-  border-color: #2E7D32 !important;
-  color: #2E7D32;
+  background-color: #2E7D32 !important;
+  color: #fff !important;
+  border: none !important;
 }
 
 .continueShoppingButton:hover {
-  background: #2E7D32 !important;
+  background: #1B5E20 !important;
   color: #fff;
 }
 
