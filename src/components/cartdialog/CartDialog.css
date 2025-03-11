@@ -153,4 +153,13 @@
     font-size: 1rem !important;
   }
   
+.cart-price-q {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 90% !important;
+  gap: 0px !important;
+}
+
+  
 }
